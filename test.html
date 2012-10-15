@@ -103,9 +103,11 @@
     </script>
     <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
   </head>
-  <body><p>I would expect there to be the filepicker below.</p>
-<p>There is a bunch of javascript in this file, but it doesn't appear to do anything. I took it from <a href="https://developers.google.com/drive/quickstart" target="_blank">https://developers.google.com/drive/quickstart</a>.</p>
-    <!--Add a file picker for the user to start the upload process -->
-    <input type="file" id="filePicker" />
+  <body><p>Why isn't this asking for authentication?</p>
+<p>I would expect there to be the filepicker below.</p>
+<p>There is a bunch of javascript in this file, but it doesn't appear to do anything. I took it from <a href="https://developers.google.com/drive/quickstart" target="_blank">https://developers.google.com/drive/quickstart</a>. It seems that if authentication isn't requested, then style="visibility: hidden".</p>
+<p>Also, why is there no submit button? </p>
+<!--Add a file picker for the user to start the upload process -->
+    <input type="file" id="filePicker" style="visibility: hidden"/>
   </body>
 </html>
